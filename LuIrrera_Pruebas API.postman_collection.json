@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "410caaa4-dd42-4397-9546-7d2e09869418",
+		"name": "Pruebas API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15603280"
+	},
+	"item": [
+		{
+			"name": "Dog API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"https://images.dog.ceo/breeds/pointer-german/n02100236_922.jpg\",\r\n    \"status\": \"success\"\r\n}"
+				},
+				"url": {
+					"raw": "https://dog.ceo/api/breeds/image/random",
+					"protocol": "https",
+					"host": [
+						"dog",
+						"ceo"
+					],
+					"path": [
+						"api",
+						"breeds",
+						"image",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jikan API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.jikan.moe/v3/search/anime?q=hajime no hippo",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jikan",
+						"moe"
+					],
+					"path": [
+						"v3",
+						"search",
+						"anime"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "hajime no hippo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JSON Placeholder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/photos?title=accusamus beatae ad facilis cum similique qui sunt",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"photos"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "accusamus beatae ad facilis cum similique qui sunt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reqres.in API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "reqres.in/api/users/1",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NASA API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=eOVNSTdv4WHS9NxDsagt2t1g64gA1moqkbcyK45k",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"mars-photos",
+						"api",
+						"v1",
+						"rovers",
+						"curiosity",
+						"photos"
+					],
+					"query": [
+						{
+							"key": "sol",
+							"value": "1000"
+						},
+						{
+							"key": "api_key",
+							"value": "eOVNSTdv4WHS9NxDsagt2t1g64gA1moqkbcyK45k"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
